@@ -1,11 +1,18 @@
 import { Tabs } from "expo-router"
-const _layout = () => {
+import Ionicons from '@expo/vector-icons/Ionicons';
+export default function TabLayot() {
     return (
-        <Tabs >
-            <Tabs.Screen name="screenThree" />
-            <Tabs.Screen name="screenTwo" />
+        <Tabs>
+            <Tabs.Screen name="screenThree"
+                options={{
+                    title: 'Home',
+                    tabBarIcon: () => <Ionicons name="home" size={24} color="black" />
+                }} />
+            <Tabs.Screen name="screenTwo"
+                options={{
+                    title:'setting',
+                    tabBarIcon: () => <Ionicons name="settings-outline" size={24} color="black" />
+                }} />
         </Tabs>
     )
 }
-
-export default _layout
