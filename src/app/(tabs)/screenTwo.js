@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
-import NavBar from '../../component/topNavbar'
+import NavBar from '../../Component/topNavbar'
 import { router } from 'expo-router'
 const screenTwo = () => {
   return (
