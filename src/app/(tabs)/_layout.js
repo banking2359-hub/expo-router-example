@@ -3,6 +3,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 export default function TabLayot() {
     return (
         <Tabs screenOptions={{
+            headerShown:false,
             tabBarActiveTintColor: 'red',
             headerLeft: () => <Ionicons name="chevron-back" size={30} color="black" style={{marginLeft:20,paddingHorizontal:5}} onPress={()=>router.push('/')} />
         }}>
